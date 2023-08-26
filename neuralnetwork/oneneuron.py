@@ -4,7 +4,7 @@ input = 1
 output_desire = 0
 input_weight = 0.5
 
-learning_rate = 0.01
+learning_rate = 0.1
 
 def activation(sum):
     if sum >= 0:
@@ -16,8 +16,12 @@ print("entrada", input, "desejado", output_desire)
 
 error = math.inf
 
+interation = 0
 
 while not error  == 0:
+    interation += 1
+    print("------------- interação -----------", interation)
+    print("------------- peso ------------", input_weight)
     sum = input * input_weight
     output = activation(sum)
     print("saida", output)
