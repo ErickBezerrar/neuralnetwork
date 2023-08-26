@@ -3,8 +3,7 @@ import math
 input = 1
 output_desire = 0
 input_weight = 0.5
-
-learning_rate = 0.1
+learning_rate = 0.001
 
 def activation(sum):
     if sum >= 0:
